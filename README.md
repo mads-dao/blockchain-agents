@@ -1,6 +1,6 @@
 # 🚀 Claude Code Blockchain Subagents Collection
 
-A comprehensive collection of specialized AI subagents for Claude Code, designed to enhance blockchain development workflows with domain-specific expertise. Built for developers who need intelligent assistance with Smart Contract (Solidity) Development, Solana programs, smart contract testing, security audit program / smart contract and blockchain documentation.
+A comprehensive collection of specialized AI subagents for Claude Code, designed to enhance blockchain development workflows with domain-specific expertise. Built for developers who need intelligent assistance with Smart Contract (Solidity) Development, Solana programs, smart contract testing, Web3 frontend development, security audit program / smart contract and blockchain documentation.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![Open Source](https://img.shields.io/badge/Open%20Source-Yes-brightgreen)](https://opensource.org/)
@@ -34,6 +34,20 @@ This repository contains blockchain-specialized subagents that extend Claude Cod
 - Migrate tests between different testing frameworks
 
 **Best for**: Test-driven development, quality assurance, regression testing, test framework migration
+
+### 🎨 [Solana Web3 Frontend Architect](solana-web3-frontend-architect.md)
+**Purpose**: Expert guidance for building production-grade Web3 frontend applications
+
+**Capabilities**:
+- Build React/Next.js components with Solana blockchain integration
+- Implement wallet connection flows for multiple providers (Phantom, Solflare, etc.)
+- Create robust transaction handling with error recovery and retry mechanisms
+- Optimize performance with Core Web Vitals >90 and bundle size <200KB
+- Develop comprehensive testing strategies (unit, integration, E2E)
+- Implement PWA features and offline support
+- Ensure WCAG 2.1 AA accessibility compliance
+
+**Best for**: DApp frontend development, wallet integration, performance optimization, component architecture
 
 ## 🚀 Getting Started
 
@@ -74,11 +88,18 @@ user: "I need tests for my new transfer_authority instruction"
 claude: "I'll use the solana-qa-engineer agent to create comprehensive tests for your transfer_authority instruction using the appropriate testing framework."
 ```
 
+### Frontend Development
+```
+user: "I need a wallet connection component that supports multiple Solana wallets"
+claude: "I'll use the solana-web3-frontend-architect agent to create a robust wallet connection component with support for Phantom, Solflare, and other popular wallets."
+```
+
 ### Automatic Context Detection
 The subagents are automatically invoked when Claude Code detects relevant context:
 - Creating or modifying Solana programs
 - Working with blockchain documentation
 - Writing or debugging tests for smart contracts
+- Building React/Next.js components with Web3 integration
 
 ## 🏗️ Architecture
 
@@ -117,6 +138,7 @@ We welcome contributions from the blockchain development community!
 - **DeFi Protocol Architect**: For decentralized finance applications
 - **NFT Marketplace Developer**: For NFT-related functionality
 - **Governance Protocol Designer**: For DAO and governance systems
+- **Smart Contract Security Auditor**: For security analysis and vulnerability detection
 
 ## 📄 License
 
